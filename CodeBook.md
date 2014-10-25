@@ -4,6 +4,7 @@
 Raw data was obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 Script run_analysis.R was run to do following clean up activities:
+
 1. Read training and test data sets in raw data and merge them into one data set.
 2. Extract only the measurements on the mean and standard deviation for each measurement. These happened to be features containing mean() and std()
 3. Use descriptive activity names to name the activities in the data set
@@ -15,37 +16,52 @@ Grouped this cleaned data set by subject and activity and summarized the measure
 
 #####Summarized value of signals by subject and activity. 
 * subject                                                int
-subject identifier
-1..30 unique identifier associated with person who performed the activity
+
+   subject identifier  
+   1..30 unique identifier associated with person who performed the activity
 * activity                                               char
-name of activity person was performing when measurement was made.
-WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+
+   name of activity person was performing when measurement was made.  
+   WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 * TimeDomainSignalBodyAccelerationmeanX                  number
-Mean value of body acceleration along X direction in time domain signal
+
+  Mean value of body acceleration along X direction in time domain signal
 * TimeDomainSignalBodyAccelerationmeanY                  number
-Mean value of body acceleration along Y direction in time domain signal
+
+  Mean value of body acceleration along Y direction in time domain signal
 * TimeDomainSignalBodyAccelerationmeanZ                  number
-Mean value of body acceleration along Z direction in time domain signal
+
+  Mean value of body acceleration along Z direction in time domain signal
 * TimeDomainSignalBodyAccelerationstdX                   number
-Standard deviation of body acceleration along X direction in time domain signal
+
+  Standard deviation of body acceleration along X direction in time domain signal
 * TimeDomainSignalBodyAccelerationstdY                   number
-Standard deviation of body acceleration along Y direction in time domain signal
+
+  Standard deviation of body acceleration along Y direction in time domain signal
 * TimeDomainSignalBodyAccelerationstdZ                   number
-Standard deviation of body acceleration along Z direction in time domain signal
+
+  Standard deviation of body acceleration along Z direction in time domain signal
 * TimeDomainSignalGravityAccelerationmeanX               number
-Mean value of gravity acceleration along X direction in time domain signal
+  
+  Mean value of gravity acceleration along X direction in time domain signal
 * TimeDomainSignalGravityAccelerationmeanY               number
-Mean value of gravity acceleration along Y direction in time domain signal
+
+  Mean value of gravity acceleration along Y direction in time domain signal
 * TimeDomainSignalGravityAccelerationmeanZ               number
-Mean value of gravity acceleration along Z direction in time domain signal
+  
+  Mean value of gravity acceleration along Z direction in time domain signal
 * TimeDomainSignalGravityAccelerationstdX                number
-Standard deviation of gravity acceleration along X direction in time domain signal
+
+  Standard deviation of gravity acceleration along X direction in time domain signal
 * TimeDomainSignalGravityAccelerationstdY                number
-Standard deviation of gravity acceleration along Y direction in time domain signal
+
+  Standard deviation of gravity acceleration along Y direction in time domain signal
 * TimeDomainSignalGravityAccelerationstdZ                number
-Standard deviation of gravity acceleration along Z direction in time domain signal
+
+  Standard deviation of gravity acceleration along Z direction in time domain signal
 * TimeDomainSignalBodyAccelerationJerkmeanX              number
-Mean value of  body linear jerk along X direction in time domain signal
+
+  Mean value of  body linear jerk along X direction in time domain signal
 * TimeDomainSignalBodyAccelerationJerkmeanY              number
 Mean value of  body linear jerk along Y direction in time domain signal
 * TimeDomainSignalBodyAccelerationJerkmeanZ              number
