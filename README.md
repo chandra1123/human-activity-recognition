@@ -48,6 +48,6 @@ Reads raw data from a directory (dir) and outputs tidy data set in the file (out
 2. Creates derived variables ismean, isstd and descriptive varname in **features**
 3. Creates a dataset **selectedfeatures** containing mean and std variable names.
 4. Reads activities_labels.txt into **activities** data set.
-5. Reads raw data set using helper function readRawData; replaces activity id with descriptive labels; removes measurements those in **selectedfeatures** and renames measurement variable names with descriptive names. This data set is **rawData**.
+5. Reads raw data set using helper function readRawData; replaces activity id with descriptive labels; removes measurements except those in **selectedfeatures** and renames measurement variable names with descriptive names. This data set is **rawData**.
 6. Takes **rawData**, groups by subject and activity and summarizes all measurments by taking mean. This data set is **tidyData**.
 7. Writes tidyData into outfile using write.table.  This is the output of study.
