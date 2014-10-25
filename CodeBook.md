@@ -222,4 +222,4 @@ Grouped this cleaned data set by subject and activity and summarized the measure
 
   Standard deviation of body gyro jerk magnitude in frequency domain signal
 
-**Note**: all measurements are in range [-1,1]
+**Note**: all signal measurements are in range [-1,1]
